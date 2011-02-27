@@ -1,0 +1,35 @@
+<h1>Listing layouts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Content type</th>
+    <th>Comment</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th>Published by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @layouts.each do |layout| %>
+  <tr>
+    <td><%= layout.name %></td>
+    <td><%= layout.content %></td>
+    <td><%= layout.content_type %></td>
+    <td><%= layout.comment %></td>
+    <td><%= layout.created_by %></td>
+    <td><%= layout.updated_by %></td>
+    <td><%= layout.published_by %></td>
+    <td><%= link_to 'Show', layout %></td>
+    <td><%= link_to 'Edit', edit_layout_path(layout) %></td>
+    <td><%= link_to 'Destroy', layout, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Layout', new_layout_path %>

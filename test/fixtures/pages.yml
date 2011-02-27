@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  column_id: 1
+  path: MyString
+  layout_id: 1
+  title: MyString
+  breadcrumb: MyString
+  description: MyString
+  keywords: MyString
+  status: 1
+  nav_type: MyString
+  created_by: 1
+  updated_by: 1
+  published_by: 1
+  published_at: 2011-02-27 17:00:05
+  destroyed_at: 2011-02-27 17:00:05
+
+two:
+  column_id: 1
+  path: MyString
+  layout_id: 1
+  title: MyString
+  breadcrumb: MyString
+  description: MyString
+  keywords: MyString
+  status: 1
+  nav_type: MyString
+  created_by: 1
+  updated_by: 1
+  published_by: 1
+  published_at: 2011-02-27 17:00:05
+  destroyed_at: 2011-02-27 17:00:05

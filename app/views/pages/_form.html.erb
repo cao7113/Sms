@@ -1,0 +1,73 @@
+<%= form_for(@page) do |f| %>
+  <% if @page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
+
+      <ul>
+      <% @page.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :column_id %><br />
+    <%= f.text_field :column_id %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br />
+    <%= f.text_field :path %>
+  </div>
+  <div class="field">
+    <%= f.label :layout_id %><br />
+    <%= f.text_field :layout_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :breadcrumb %><br />
+    <%= f.text_field :breadcrumb %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :keywords %><br />
+    <%= f.text_field :keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :nav_type %><br />
+    <%= f.text_field :nav_type %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br />
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :published_by %><br />
+    <%= f.text_field :published_by %>
+  </div>
+  <div class="field">
+    <%= f.label :published_at %><br />
+    <%= f.datetime_select :published_at %>
+  </div>
+  <div class="field">
+    <%= f.label :destroyed_at %><br />
+    <%= f.datetime_select :destroyed_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

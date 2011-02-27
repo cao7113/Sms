@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  parent_id: 1
+  name: MyString
+  description: MyString
+  path: MyString
+  status: 1
+  comment: MyString
+  published_by: 1
+  published_at: 2011-02-27 17:00:01
+  created_by: 1
+  updated_by: 1
+
+two:
+  parent_id: 1
+  name: MyString
+  description: MyString
+  path: MyString
+  status: 1
+  comment: MyString
+  published_by: 1
+  published_at: 2011-02-27 17:00:01
+  created_by: 1
+  updated_by: 1

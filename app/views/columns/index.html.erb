@@ -1,0 +1,41 @@
+<h1>Listing columns</h1>
+
+<table>
+  <tr>
+    <th>Parent</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Path</th>
+    <th>Status</th>
+    <th>Comment</th>
+    <th>Published by</th>
+    <th>Published at</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @columns.each do |column| %>
+  <tr>
+    <td><%= column.parent_id %></td>
+    <td><%= column.name %></td>
+    <td><%= column.description %></td>
+    <td><%= column.path %></td>
+    <td><%= column.status %></td>
+    <td><%= column.comment %></td>
+    <td><%= column.published_by %></td>
+    <td><%= column.published_at %></td>
+    <td><%= column.created_by %></td>
+    <td><%= column.updated_by %></td>
+    <td><%= link_to 'Show', column %></td>
+    <td><%= link_to 'Edit', edit_column_path(column) %></td>
+    <td><%= link_to 'Destroy', column, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Column', new_column_path %>

@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Parent:</b>
+  <%= @column.parent_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @column.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @column.description %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @column.path %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @column.status %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @column.comment %>
+</p>
+
+<p>
+  <b>Published by:</b>
+  <%= @column.published_by %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%= @column.published_at %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @column.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @column.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_column_path(@column) %> |
+<%= link_to 'Back', columns_path %>

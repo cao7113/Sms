@@ -1,0 +1,8 @@
+*.[oa]
+*~
+#log, tmp, pid
+log/
+tmp/
+
+#back file data
+db/data.yml*

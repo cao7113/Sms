@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @layout.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @layout.content %>
+</p>
+
+<p>
+  <b>Content type:</b>
+  <%= @layout.content_type %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @layout.comment %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @layout.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @layout.updated_by %>
+</p>
+
+<p>
+  <b>Published by:</b>
+  <%= @layout.published_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_layout_path(@layout) %> |
+<%= link_to 'Back', layouts_path %>
